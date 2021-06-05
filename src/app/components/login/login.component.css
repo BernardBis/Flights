@@ -1,0 +1,9 @@
+#modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-footer {
+  display: block !important;
+  text-align: center;
+}

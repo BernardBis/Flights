@@ -1,0 +1,99 @@
+<div class="flight-item-container">
+
+  <div class="flight-item-details">
+
+    <!-- Departure -->
+    <div class="flight-item-departure">
+
+      <div class="flight-direct-plain">
+        <img src="assets/icons/departure-flight.svg" >
+      </div>
+
+      <div class="item-details-order">
+        <div class="item-details-from">
+          <span class="flight-time">{{ departureDetails.timeFrom }}</span>&nbsp;
+          <span class="flight-city">{{ departureDetails.cityFrom }}</span>
+        </div>
+        <div>
+          <span class="flight-airport">{{ departureDetails.airportFrom }}</span>
+        </div>
+      </div>
+
+      <div class="flight-direct-arrow">
+        <img src="assets/icons/arrow-right.svg">
+        <div class="flight-direct-time-info">
+          <span>{{ flight.distanceTimeTo }}</span>, <span>{{flight.distanceDirectInfo}}</span>
+        </div>
+      </div>
+
+      <div class="item-details-order">
+        <div class="item-details-to">
+          <span class="flight-time">{{ departureDetails.timeTo }}</span>&nbsp;
+          <span class="flight-city">{{ departureDetails.cityTo }}</span>
+        </div>
+        <div>
+          <span class="flight-airport">{{ departureDetails.airportTo }}</span>
+        </div>
+      </div>
+
+      <div class="flight-direct-airline">
+        <app-img [id]="departureDetails.airlinesId"></app-img>
+      </div>
+
+    </div>
+    <!-- End Departure -->
+
+    <!-- Arrival -->
+    <div class="flight-item-arrival">
+
+      <div class="flight-direct-plain">
+        <img src="assets/icons/arrival-flight.svg" >
+      </div>
+
+      <div class="item-details-order">
+        <div class="item-details-from">
+          <span class="flight-time">{{ arrivalDetails.timeFrom }}</span>&nbsp;
+          <span class="flight-city">{{ arrivalDetails.cityFrom }}</span>
+        </div>
+        <div>
+          <span class="flight-airport">{{ arrivalDetails.airportFrom }}</span>
+        </div>
+      </div>
+
+      <div class="flight-direct-arrow">
+        <img src="assets/icons/arrow-left.svg">
+        <div class="flight-direct-time-info">
+          <span>{{ flight.distanceTimeFrom }}</span>, <span>{{flight.distanceDirectInfo}}</span>
+        </div>
+      </div>
+
+      <div class="item-details-order">
+        <div class="item-details-to">
+          <span class="flight-time">{{ arrivalDetails.timeTo }}</span>&nbsp;
+          <span class="flight-city">{{ arrivalDetails.cityTo }}</span>
+        </div>
+        <div>
+          <span class="flight-airport">{{ arrivalDetails.airportTo }}</span>
+        </div>
+      </div>
+
+      <div class="flight-direct-airline">
+        <app-img [id]="arrivalDetails.airlinesId"></app-img>
+      </div>
+
+    </div>
+    <!-- End Arrival -->
+
+  </div>
+
+  <!-- Price -->
+  <div class="flight-item-price">
+    <span>{{ price.value | amount }}</span>
+    <br />
+    <span>{{ price.additionalInfo }}</span>
+    <br />
+    <button class="btn btn-md btn-warning" (click)="showDetails(flight.id)">Kontynuuj</button>
+  </div>
+  <!-- End Price -->
+
+</div>

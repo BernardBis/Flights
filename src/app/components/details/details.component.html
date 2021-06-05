@@ -1,0 +1,184 @@
+<div class="details-container" *ngIf="isLoaded">
+
+  <div class="details-info-section">
+
+    <!-- Departure -->
+    <div class="flight-item-container">
+      <div class="flight-item-details">
+
+        <div class="flight-item-header">
+          <div class="flight-direct-plain header-plain">
+            <img src="assets/icons/departure-flight.svg" />
+          </div>
+
+          <div class="header-city-from">{{departureDetails.cityFrom}}</div>
+          <div class="flight-direct-arrow">
+            <img src="assets/icons/arrow-right.svg" />
+            <div class="flight-direct-time-info">
+              <span>{{flight.distanceTimeFrom}}</span>
+            </div>
+          </div>
+          <div class="header-city-to">{{departureDetails.cityTo}}</div>
+        </div>
+
+        <div class="flight-item-departure-details">
+          <div class="departure-details-from">
+            <div>
+              <span class="details-date">Nd, 30 maj</span>&nbsp;<span class="details-time">{{departureDetails.timeFrom}}</span>
+            </div>
+            <div>
+              <span class="details-city">{{departureDetails.cityFrom}}</span>,&nbsp;<span class="details-airport">{{departureDetails.airportFrom}}</span>
+            </div>
+          </div>
+          <div class="departure-details-from-info">
+            <img src="assets/icons/arrow-right.svg">
+            <div class="details-info-time">
+              <span>{{flight.distanceTimeFrom}}</span>
+            </div>
+            <div class="details-info-number">
+              <span>{{flight.flightNumberFrom}}</span>
+            </div>
+          </div>
+          <div class="departure-details-to">
+            <div>
+              <span class="details-time">{{departureDetails.timeTo}}</span>&nbsp;<span class="details-date">Nd, 30 maj</span>
+            </div>
+            <div>
+              <span class="details-city">{{departureDetails.cityTo}}</span>,&nbsp;<span class="details-airport">{{departureDetails.airportTo}}</span>
+            </div>
+          </div>
+          <div class="departure-details-airline">
+            <app-img [id]="departureDetails.airlinesId"></app-img>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Departure -->
+
+    <!-- Arrival -->
+    <div class="flight-item-container">
+      <div class="flight-item-details">
+
+        <div class="flight-item-header">
+          <div class="flight-direct-plain header-plain">
+            <img src="assets/icons/arrival-flight.svg" >
+          </div>
+          <div class="header-city-from">
+            <span>Paryż</span>
+          </div>
+          <div class="flight-direct-arrow">
+            <img src="assets/icons/arrow-left.svg">
+            <div class="flight-direct-time-info">
+              <span>2h 30m</span>
+            </div>
+          </div>
+          <div class="header-city-to">
+            <span>Warszawa</span>
+          </div>
+        </div>
+
+        <div class="flight-item-arrival-details">
+          <div class="arrival-details-from">
+            <div>
+              <span class="details-date">Nd, 30 maj</span>&nbsp;<span class="details-time">{{arrivalDetails.timeFrom}}</span>
+            </div>
+            <div>
+              <span class="details-city">{{arrivalDetails.cityFrom}}</span>,&nbsp;<span class="details-airport">{{arrivalDetails.airportFrom}}</span>
+            </div>
+          </div>
+          <div class="arrival-details-from-info">
+            <img src="assets/icons/arrow-left.svg">
+            <div class="details-info-time">
+              <span>{{flight.distanceTimeTo}}</span>
+            </div>
+            <div class="details-info-number">
+              <span>{{flight.flightNumberTo}}</span>
+            </div>
+          </div>
+          <div class="arrival-details-to">
+            <div>
+              <span class="details-time">{{arrivalDetails.timeTo}}</span>&nbsp;<span class="details-date">Nd, 30 maj</span>
+            </div>
+            <div>
+              <span class="details-city">{{arrivalDetails.cityTo}}</span>,&nbsp;<span class="details-airport">{{arrivalDetails.airportTo}}</span>
+            </div>
+          </div>
+          <div class="arrival-details-airline">
+            <app-img [id]="arrivalDetails.airlinesId"></app-img>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Arrival -->
+
+  </div>
+
+  <!-- Summary -->
+  <div class="flight-item-container-summary">
+    <div class="summary-details">
+
+      <div class="summary-header">
+        <div>
+          <img src="assets/icons/cart.svg">
+        </div>
+        <div class="summery-header-title">Podsumowanie</div>&nbsp;
+      </div>
+
+      <div class="flight-item-summary">
+        <div class="summary-ticket">
+          <span>1 × Bilet dla dorosłego</span><span>1440.00 zł</span>
+        </div>
+        <div class="summary-luggage">
+          <span>1 × Mały bagaż podręczny</span><span>Wliczony</span>
+        </div>
+        <div class="summary-service">
+          <span>Opłata serwisowa</span><span>89 zł</span>
+        </div>
+        <div class="summary-extra">
+          <img src="assets/icons/check.svg">
+          <span> Profesjonalna obsługa klienta</span>
+        </div>
+      </div>
+
+      <div class="summary-price">
+        <span>Suma</span><span>{{ price.value | amount }}</span>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Summary -->
+
+</div>
+
+<!-- Reservation -->
+<ng-template [ngIf]="getUser()">
+  <div class="reservation-container" *ngIf="isLoaded">
+
+    <div class="details-reservation-section">
+      <div class="reservation-item-container">
+        <div class="reservation-header">
+          Dane pasażera
+        </div>
+        <div class="reservation-form">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">Imię</label>
+            <input type="text" class="form-control" [value]="user.firstName" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Nazwisko</label>
+            <input type="text" class="form-control" [value]="user.lastName" disabled>
+          </div>
+        </div>
+      </div>
+      <div class="reservation-button" (click)="setReservation()">
+        <div>Rezerwuj ten lot {{ price.value | amount }}</div>
+        <div>
+          <img src="assets/icons/airplain.svg" >
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- End Reservation -->

@@ -1,0 +1,28 @@
+<div class="col-12 search-form-container">
+
+  <form [formGroup]="searchForm">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Misto wylotu"
+          id="departureCity" name="departureCity" formControlName="departureCity">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Miasto powrotu"
+          id="arrivalCity" name="arrivalCity" formControlName="arrivalCity">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Data wylotu"
+          ngbDatepicker #dateFrom="ngbDatepicker" [minDate]="minDate" [maxDate]="maxDate"
+          id="departureDate" name="departureDate" formControlName="departureDate" (click)="dateFrom.toggle()">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Data powrotu"
+          ngbDatepicker #dateTo="ngbDatepicker" [minDate]="minDate" [maxDate]="maxDate"
+          id="arrivalDate" name="arrivalDate" formControlName="arrivalDate" (click)="dateTo.toggle()">
+      </div>
+      <div class="col">
+        <button class="btn btn-md btn-warning" (click)="onSubmit()">Szukaj lotów</button>
+      </div>
+    </div>
+  </form>
+</div>

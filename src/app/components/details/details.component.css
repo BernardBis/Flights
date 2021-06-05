@@ -1,0 +1,308 @@
+.details-container {
+  display: flex;
+}
+
+.details-info-section {
+  width: 70%;
+}
+
+.flight-item-container {
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px #e6e6e6;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.flight-item-header {
+  display: flex;
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.flight-item-header div:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.flight-item-header div:nth-child(4) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-plain {
+  width: 20%;
+}
+
+.header-city-from {
+  width: 15%;
+}
+
+.header-city-to {
+  width: 20%;
+}
+
+.flight-item-arrival {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.flight-item-departure-details {
+  display: flex;
+  padding: 10px;
+}
+
+.flight-item-arrival-details {
+  display: flex;
+  padding: 10px;
+}
+
+.departure-details-from {
+  width: 30%;
+}
+
+.details-date {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.details-time {
+  font-weight: 700;
+}
+
+.details-city {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.details-airport {
+  font-size: 14px;
+}
+
+.departure-details-from-info {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.details-info-number > span {
+  font-weight: 700;
+}
+
+.departure-details-to {
+  width: 30%;
+  text-align: right;
+}
+
+.departure-details-airline {
+  width: 20%;
+  text-align: center;
+}
+
+.arrival-details-from-info {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.arrival-details-from {
+  width: 30%;
+}
+
+.arrival-details-from-info {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.arrival-details-to {
+  width: 30%;
+  text-align: right;
+}
+
+.arrival-details-airline {
+  width: 20%;
+  text-align: center;
+}
+
+.flight-direct-plain {
+  width: 15%;
+  text-align: center;
+}
+
+.flight-direct-arrow {
+  width: 20%;
+  text-align: center;
+}
+
+.flight-direct-time-info {
+  font-size: 12px !important;
+  font-weight: normal !important;
+}
+
+/* Summary */
+.flight-item-container-summary {
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px #e6e6e6;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 30%;
+}
+
+.summary-header {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 25px;
+}
+
+.summary-header > div {
+  width: 10%;
+}
+
+.summary-header > div > img {
+  width: 20px;
+}
+
+.summery-header-title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.flight-item-summary {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.summary-ticket {
+  display: flex;
+}
+
+.summary-ticket span:nth-child(1) {
+  width: 80%;
+}
+
+.summary-ticket span:last-child {
+  font-weight: 700;
+}
+
+.summary-luggage {
+  display: flex;
+}
+
+.summary-luggage span:nth-child(1) {
+  width: 80%;
+}
+
+.summary-luggage span:last-child {
+  font-weight: 700;
+  color: #00B4A5;
+}
+
+.summary-service {
+  display: flex;
+}
+
+.summary-service span:nth-child(1) {
+  width: 80%;
+}
+
+.summary-service span:last-child {
+  font-weight: 700;
+}
+
+.summary-extra {
+  font-weight: 700;
+  color: #f63;
+}
+
+.summary-price {
+  display: flex;
+  padding: 40px;
+  font-size: 18px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.summary-price span:nth-child(1) {
+  width: 60%;
+}
+
+.summary-price span:last-child {
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Reservation */
+
+.reservation-container {
+  margin-top: 20px;
+  clear: both;
+}
+
+.reservation-button {
+  display: flex;
+  width: 400px;
+  float: right;
+  margin-top: 10px;
+  background-color: #ffc107;
+  border: 1px solid #e6ac00;
+  color: #000000;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reservation-button div:nth-child(1) {
+  padding-top: 3px;
+  width: 80%;
+  font-weight: 700;
+  text-align: left !important;
+}
+
+.reservation-button div:last-child {
+  width: 40%;
+  text-align: right !important;
+}
+
+.reservation-button img {
+  width: 30px;
+}
+
+.details-reservation-section {
+  width: 69%;
+}
+
+.reservation-header {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  padding: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.reservation-item-container {
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 2px #e6e6e6;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.reservation-form {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.reservation-form input {
+  font-size: 14px !important;
+  width: 90%;
+}
+
+.reservation-form label {
+  font-weight: 700;
+  color: #00B4A5;
+}

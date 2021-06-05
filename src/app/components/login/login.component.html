@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title">Zaloguj się</h4>
+</div>
+<div class="modal-body">
+  <form [formGroup]="loginForm">
+    <div class="mb-3">
+      <input type="text" autocomplete="username" class="form-control" placeholder="Login"
+          id="userLogin" name="userLogin" formControlName="userLogin">
+    </div>
+    <div class="mb-3">
+      <input input type="password" autocomplete="current-password" class="form-control" placeholder="Hasło"
+        id="userPassword" name="userPassword" formControlName="userPassword">
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" ngbAutofocus class="btn btn-primary"
+    (click)="Login()">Zaloguj się</button>
+</div>

@@ -1,0 +1,15 @@
+.search-form-container {
+  padding: 10px;
+  border: 1px solid #0066ff;
+  border-radius: 6px;
+  background: #66a3ff;
+}
+
+.search-form-container input {
+  border: 1px solid #0066ff;
+}
+
+.search-form-container button {
+  width: 100%;
+  border: 1px solid #e6ac00;
+}

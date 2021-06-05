@@ -1,0 +1,347 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "login": "jkowalski@net.pl",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "firstName": "Adam",
+      "lastName": "Nowak",
+      "login": "anowak@net.pl",
+      "password": "123456"
+    }
+  ],
+  "flights": [
+    {
+      "id": 1,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Kraków",
+          "airportFrom": "Balice",
+          "cityTo": "Paryż",
+          "airportTo": "Ch de Gaulle",
+          "airlinesId": 1,
+          "dateFrom": "01-06-2021",
+          "timeFrom": "06:45",
+          "dateTo": "01-06-2021",
+          "timeTo": "09:10"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Paryż",
+          "airportFrom": "Beauvais Tille",
+          "cityTo": "Kraków",
+          "airportTo": "Balice",
+          "airlinesId": 2,
+          "dateFrom": "01-06-2021",
+          "timeFrom": "18:40",
+          "dateTo": "01-06-2021",
+          "timeTo": "20:50"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 715.1,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "01-06-2021",
+      "dateTo": "01-06-2021",
+      "cityFrom": "Kraków",
+      "cityTo":"Paryż",
+      "distanceTimeTo": "2h 25m",
+      "distanceTimeFrom": "2h 10m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1347",
+      "flightNumberTo": "A5 AF1347"
+    },
+    {
+      "id": 2,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Kraków",
+          "airportFrom": "Balice",
+          "cityTo": "Paryż",
+          "airportTo": "Ch de Gaulle",
+          "airlinesId": 1,
+          "dateFrom": "02-06-2021",
+          "timeFrom": "16:10",
+          "dateTo": "02-06-2021",
+          "timeTo": "18:35"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Paryż",
+          "airportFrom": "Beauvais Tille",
+          "cityTo": "Kraków",
+          "airportTo": "Balice",
+          "airlinesId": 2,
+          "dateFrom": "02-06-2021",
+          "timeFrom": "18:40",
+          "dateTo": "02-06-2021",
+          "timeTo": "20:50"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 784,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "02-06-2021",
+      "dateTo": "02-06-2021",
+      "cityFrom": "Kraków",
+      "cityTo":"Paryż",
+      "distanceTimeTo": "2h 25m",
+      "distanceTimeFrom": "2h 10m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1349",
+      "flightNumberTo": "A5 AF1340"
+    },
+    {
+      "id": 3,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Warszawa",
+          "airportFrom": "Lotnisko Chopina",
+          "cityTo": "Paryż",
+          "airportTo": "Ch de Gaulle",
+          "airlinesId": 4,
+          "dateFrom": "03-06-2021",
+          "timeFrom": "07:40",
+          "dateTo": "03-06-2021",
+          "timeTo": "10:10"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Paryż",
+          "airportFrom": "Beauvais Tille",
+          "cityTo": "Warszawa",
+          "airportTo": "Warszawa Modlin",
+          "airlinesId": 2,
+          "dateFrom": "03-06-2021",
+          "timeFrom": "18:40",
+          "dateTo": "03-06-2021",
+          "timeTo": "20:50"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 1525.1,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "03-06-2021",
+      "dateTo": "03-06-2021",
+      "cityFrom": "Warszawa",
+      "cityTo":"Paryż",
+      "distanceTimeTo": "2h 30m",
+      "distanceTimeFrom": "2h 5m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1347",
+      "flightNumberTo": "A5 AF1347"
+    },
+    {
+      "id": 4,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Warszawa",
+          "airportFrom": "Lotnisko Chopina",
+          "cityTo": "Paryż",
+          "airportTo": "Ch de Gaulle",
+          "airlinesId": 5,
+          "dateFrom": "04-06-2021",
+          "timeFrom": "06:45",
+          "dateTo": "04-06-2021",
+          "timeTo": "9:10"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Paryż",
+          "airportFrom": "Beauvais Tille",
+          "cityTo": "Warszawa",
+          "airportTo": "Warszawa Modlin",
+          "airlinesId": 5,
+          "dateFrom": "04-06-2021",
+          "timeFrom": "15:45",
+          "dateTo": "04-06-2021",
+          "timeTo": "18:00"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 1706,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "04-06-2021",
+      "dateTo": "04-06-2021",
+      "cityFrom": "Warszawa",
+      "cityTo":"Paryż",
+      "distanceTimeTo": "2h 25m",
+      "distanceTimeFrom": "2h 15m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1347",
+      "flightNumberTo": "A5 AF1347"
+    },
+    {
+      "id": 5,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Warszawa",
+          "airportFrom": "Lotnisko Chopina",
+          "cityTo": "Paryż",
+          "airportTo": "Ch de Gaulle",
+          "airlinesId": 4,
+          "dateFrom": "05-06-2021",
+          "timeFrom": "07:40",
+          "dateTo": "05-06-2021",
+          "timeTo": "10:10"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Paryż",
+          "airportFrom": "Ch de Gaulle",
+          "cityTo": "Warszawa",
+          "airportTo": "Lotnisko Chopina",
+          "airlinesId": 4,
+          "dateFrom": "05-06-2021",
+          "timeFrom": "19:45",
+          "dateTo": "05-06-2021",
+          "timeTo": "22:00"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 1688,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "05-06-2021",
+      "dateTo": "05-06-2021",
+      "cityFrom": "Warszawa",
+      "cityTo":"Paryż",
+      "distanceTimeTo": "2h 30m",
+      "distanceTimeFrom": "2h 15m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1347",
+      "flightNumberTo": "A5 AF1347"
+    },
+    {
+      "id": 6,
+      "details": [
+        {
+          "order": 1,
+          "cityFrom": "Warszawa",
+          "airportFrom": "Lotnisko Chopina",
+          "cityTo": "Londyn",
+          "airportTo": "Heathrow",
+          "airlinesId": 1,
+          "dateFrom": "06-06-2021",
+          "timeFrom": "16:10",
+          "dateTo": "06-06-2021",
+          "timeTo": "18:35"
+        },
+        {
+          "order": 2,
+          "cityFrom": "Londyn",
+          "airportFrom": "Heathrow",
+          "cityTo": "Warszawa",
+          "airportTo": "Lotnisko Chopina",
+          "airlinesId": 4,
+          "dateFrom": "06-06-2021",
+          "timeFrom": "19:45",
+          "dateTo": "06-06-2021",
+          "timeTo": "22:00"
+        }
+      ],
+      "prices": [
+        {
+          "value": {
+            "value": 1775.01,
+            "currency": {
+              "symbol": "PLN",
+              "precision": 2
+            }
+          },
+          "additionalInfo": "Opłata za 1 pasażera + 69 zł opłata serwisowa"
+        }
+      ],
+      "dateFrom": "06-06-2021",
+      "dateTo": "06-06-2021",
+      "cityFrom": "Warszawa",
+      "cityTo":"Londyn",
+      "distanceTimeTo": "2h 25m",
+      "distanceTimeFrom": "2h 10m",
+      "distanceDirectInfo": "Lot bezpośredni",
+      "flightNumberFrom": "A5 AF1347",
+      "flightNumberTo": "A5 AF1347"
+    }
+  ],
+  "airlines": [
+    {
+      "id": 1,
+      "name": "Airlinair",
+      "symbol": "airlinair"
+    },
+    {
+      "id": 2,
+      "name": "Ryanair",
+      "symbol": "ryanair"
+    },
+    {
+      "id": 3,
+      "name": "Wizz Air",
+      "symbol": "wizzair"
+    },
+    {
+      "id": 4,
+      "name": "LOT",
+      "symbol": "lot"
+    },
+    {
+      "id": 5,
+      "name": "Air France",
+      "symbol": "airfrance"
+    }
+  ]
+}
